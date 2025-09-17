@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>HW1</title>
+</head>
+<body>
+    {% from "includes/base.html" import nav_link with context %}
+    <ul class="navbar">
+        {{ nav_link('Home', 'home') }}
+        {{ nav_link('Guestbook', 'guestbook') }}
+        {{ nav_link('Sign', 'sign') }}
+    </ul>
+    
+    <h1 class="title">Sign your name here</h1>
+    <div class="form">
+        <div>
+            <form action="/insert_name" method="post">
+            <input type="text" name="name" id="name" placeholder="Enter your name" >
+            <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

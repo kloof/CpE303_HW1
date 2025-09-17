@@ -1,0 +1,1 @@
+Macros in flask: https://isaacstechblog.com/blog/flask-macro/#what-is-a-macro

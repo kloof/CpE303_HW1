@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>HW1</title>
+</head>
+<body>
+    {% from "includes/base.html" import nav_link with context %}
+    <ul class="navbar">
+        {{ nav_link('Home', 'home') }}
+        {{ nav_link('Guestbook', 'guestbook') }}
+        {{ nav_link('Sign', 'sign') }}
+    </ul>
+
+    <h1 class="title">Welcome to my lovely Guestbook website!</h1>
+
+</body>
+</html>
